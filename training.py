@@ -11,7 +11,7 @@ result = pipeline(
     testing=testing_set,
     validation=val_set,
     model='TransE',
-    epochs=5,  # short epochs for testing
+    epochs=400,  # short epochs for testing
 )
 print(result)
-result.save_to_directory("results")
+result.save_to_directory("results_400")
